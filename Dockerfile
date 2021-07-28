@@ -10,7 +10,7 @@ WORKDIR /wolweb
 # Install Dependecies
 RUN apk update && apk upgrade && \
     apk add --no-cache git && \
-    git clone https://github.com/sameerdhoot/wolweb . && \
+    git clone https://github.com/unikiteam/wolweb.git . && \
     go get -d github.com/gorilla/handlers && \
     go get -d github.com/gorilla/mux && \
     go get -d github.com/ilyakaznacheev/cleanenv
